@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Link } from "@mui/material";
-import { aguila, attendance, mestores, oliksFarms } from "./data";
+import { workHistory } from "./data";
 export default function ProjectHistory() {
   return (
     <div className="mt-4">
@@ -13,85 +13,34 @@ export default function ProjectHistory() {
             <hr />
           </div>
           <div className="mb-3">
-            <div className="d-flex justify-content-end">
-              <Typography
-                gutterBottom
-                fontSize={20}
-                fontWeight={500}
-                color="#202020"
-              >
-                1. {aguila.title}
-              </Typography>
-            </div>
-            <div className="mb-1">
-              <Typography>{aguila.description}</Typography>
-            </div>
-            <div className="row mt-1">
-              {aguila.images.map((c, i) => (
-                <div className="col-lg-3 mb-1">
-                  <img src={c} alt={`aguila ${i}`} className="img-fluid" />
+            {workHistory.map((c, i) => (
+              <div className="mb-4">
+                <div
+                  className={
+                    i % 2 === 0 ? "d-flex justify-content-end mb-3" : "mb-3"
+                  }
+                >
+                  <Typography color="#123b5a" fontWeight={500}>
+                    {i + 1}. {c.title}
+                  </Typography>
                 </div>
-              ))}
-            </div>
-            <div>
-              <Link target="_blank" href={aguila.url}>
-                Check out aguila
-              </Link>
-            </div>
-          </div>
-          <div className="mb-3">
-            <div>
-              <Typography
-                gutterBottom
-                fontSize={20}
-                fontWeight={500}
-                color="#202020"
-              >
-                2. {oliksFarms.title}
-              </Typography>
-            </div>
-            <div className="mb-1">
-              <Typography>{oliksFarms.description}</Typography>
-            </div>
-            <div className="row mt-1">
-              {oliksFarms.images.map((c, i) => (
-                <div className="col-lg-3 mb-1">
-                  <img src={c} alt={`aguila ${i}`} className="img-fluid" />
+                <div className="mb-3">
+                  <Typography variant="body2">{c.description}</Typography>
                 </div>
-              ))}
-            </div>
-            <div className="mb-3">
-              <Link target="_blank" href={oliksFarms.url}>
-                check out oliks farms
-              </Link>
-            </div>
-          </div>
-          <div className="mb-3">
-            <div className="d-flex justify-content-end">
-              <Typography
-                gutterBottom
-                fontSize={20}
-                fontWeight={500}
-                color="#202020"
-              >
-                3. {mestores.title}
-              </Typography>
-            </div>
-            <div className="mb-1">
-              <Typography>{mestores.description}</Typography>
-            </div>
-            <div className="row mt-1">
-              {mestores.images.map((c, i) => (
-                <div className="col-lg-3 mb-1">
-                  <img src={c} alt={`aguila ${i}`} className="img-fluid" />
+                <div className="mb-3">
+                  {c.images.map((d, k) => (
+                    <div className="col-lg-3">
+                      <img src={d} className="img-fluid" alt={k} />
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            <div className="mb-3">
-              <Link target="_blank" href={mestores.url}>
-                check out mestores
-              </Link>
-            </div>
+                <div>
+                  <Link underline="hover" href={c.url.link}>
+                    {c.url.text}
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
