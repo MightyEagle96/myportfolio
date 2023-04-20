@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Link } from "@mui/material";
-import { aguila, attendance, oliksFarms } from "./data";
+import { aguila, attendance, mestores, oliksFarms } from "./data";
 export default function ProjectHistory() {
   return (
     <div className="mt-4">
@@ -63,6 +63,33 @@ export default function ProjectHistory() {
             <div className="mb-3">
               <Link target="_blank" href={oliksFarms.url}>
                 check out oliks farms
+              </Link>
+            </div>
+          </div>
+          <div className="mb-3">
+            <div className="d-flex justify-content-end">
+              <Typography
+                gutterBottom
+                fontSize={20}
+                fontWeight={500}
+                color="#202020"
+              >
+                3. {mestores.title}
+              </Typography>
+            </div>
+            <div className="mb-1">
+              <Typography>{mestores.description}</Typography>
+            </div>
+            <div className="row mt-1">
+              {mestores.images.map((c, i) => (
+                <div className="col-lg-3 mb-1">
+                  <img src={c} alt={`aguila ${i}`} className="img-fluid" />
+                </div>
+              ))}
+            </div>
+            <div className="mb-3">
+              <Link target="_blank" href={mestores.url}>
+                check out mestores
               </Link>
             </div>
           </div>
