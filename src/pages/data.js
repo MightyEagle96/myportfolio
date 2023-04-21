@@ -18,7 +18,7 @@ export const myData = {
   academicTitle: "M.Sc Information Technology, B.Eng Computer Engineering",
 };
 
-export const workHistory = [
+export const projectHistory = [
   {
     title: "AGUILA",
     description:
@@ -45,5 +45,55 @@ export const workHistory = [
       "This is a hobby project I built. It's an online shopping mall, where vendors can upload their products with prices attached and take payment from interested customers and deliver to them. It includes, google authentication and card payments.",
     images: [mestore1, mestore2, mestore3, mestore4],
     url: { link: "https://mestores-376810.web.app/", text: "MESTORES" },
+  },
+];
+
+export const educationHistory = [
+  { name: "M.Sc Information Technology", year: "2023" },
+  { name: "Cyber Security Training", year: "2022" },
+  { name: "Diploma Server Infrastructure Management", year: "2019" },
+  { name: "B.Eng Computer Engineering", year: "2018" },
+  { name: "CCNA Training", year: "2016" },
+];
+
+export const techStack = [
+  "React",
+  "JavaScript",
+  "React Native",
+  "Node JS",
+  "MongoDB",
+  "Express",
+  "Google Cloud Console",
+  "Google Firebase",
+  "Heroku",
+  "BitBucket",
+  "Jira",
+  "Electron",
+  "Github",
+  "Git",
+  "Postman",
+];
+
+export const workHistory = [
+  {
+    office: "Joint Admissions & Matriculation Board, Bwari Abuja",
+    date: "November 2021 - present",
+    role: "Software Engineer",
+    present: "PRESENT",
+  },
+  {
+    office: "Sharetray data networks, Gudu Abuja",
+    date: "June 2021 - November 2021",
+    role: "Software Engineer",
+  },
+  {
+    office: "Sascon International School, Maitama Abuja",
+    date: "April 2018 - May 2021",
+    role: "ICT Facilitator/Network Administrator",
+  },
+  {
+    office: "Global Distance Learning Institute, Central Area, Abuja",
+    date: "April 2016 - October 2021",
+    role: "Intern",
   },
 ];

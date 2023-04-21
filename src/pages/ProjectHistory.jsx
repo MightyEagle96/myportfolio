@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Link } from "@mui/material";
-import { workHistory } from "./data";
+import { projectHistory } from "./data";
 export default function ProjectHistory() {
   return (
     <div className="mt-4">
@@ -13,7 +13,7 @@ export default function ProjectHistory() {
             <hr />
           </div>
           <div className="mb-3">
-            {workHistory.map((c, i) => (
+            {projectHistory.map((c, i) => (
               <div className="mb-4">
                 <div
                   className={
@@ -53,7 +53,7 @@ export default function ProjectHistory() {
             </Typography>
           </div>
           <div className="mb-3">
-            {workHistory.map((c, i) => (
+            {projectHistory.map((c, i) => (
               <div className="mb-5">
                 <div className="row">
                   {i % 2 === 1 ? (
@@ -135,7 +135,7 @@ export default function ProjectHistory() {
             </Typography>
           </div>
           <div className="mb-5">
-            {workHistory.map((c, i) => (
+            {projectHistory.map((c, i) => (
               <div className="mb-4">
                 <div className="text-center">
                   <Typography color="#123b5a" variant="h6" fontWeight={700}>
