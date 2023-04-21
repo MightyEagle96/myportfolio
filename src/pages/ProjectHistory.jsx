@@ -127,7 +127,41 @@ export default function ProjectHistory() {
         </div>
       </div>
 
-      <div className="d-none d-md-block d-lg-none"></div>
+      <div className="d-none d-md-block d-lg-none">
+        <div className="container">
+          <div className="mb-5 text-center" style={{ color: "#3b608d" }}>
+            <Typography gutterBottom variant="h5" fontWeight={600}>
+              PROJECTS HISTORY
+            </Typography>
+          </div>
+          <div className="mb-5">
+            {workHistory.map((c, i) => (
+              <div className="mb-4">
+                <div className="text-center">
+                  <Typography color="#123b5a" variant="h6" fontWeight={700}>
+                    {c.title}
+                  </Typography>
+                </div>
+                <div className="mb-3">
+                  <Typography>{c.description}</Typography>
+                </div>
+                <div className="mb-3 d-flex flex-wrap">
+                  {c.images.map((d, k) => (
+                    <div className="col-md-6">
+                      <img src={d} className="img-fluid" alt={k} />
+                    </div>
+                  ))}
+                </div>
+                <div>
+                  <Link target="_blank" underline="hover" href={c.url.link}>
+                    {c.url.text}
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

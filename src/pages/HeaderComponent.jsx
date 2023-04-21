@@ -9,7 +9,7 @@ export default function HeaderComponent() {
     <div>
       <div className="d-none d-lg-block">
         <div className="desktopBanner text-white  d-flex justify-content-center align-items-center">
-          <div className="container">
+          <div className="container mt-4 mb-4">
             <Stack direction="row">
               <div className="col-lg-2">
                 <Avatar src={logo} sx={{ height: 200, width: 200 }} />
@@ -55,7 +55,7 @@ export default function HeaderComponent() {
       </div>
       <div className="d-none d-md-block d-lg-none">
         <div className="desktopBanner text-white  d-flex justify-content-center align-items-center">
-          <div className="container">
+          <div className="container mt-4 mb-4">
             <Stack direction="row" spacing={2}>
               <div className="col-lg-2">
                 <Avatar src={logo} sx={{ height: 150, width: 150 }} />
