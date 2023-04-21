@@ -44,6 +44,88 @@ export default function ProjectHistory() {
           </div>
         </div>
       </div>
+
+      <div className="d-none d-lg-block">
+        <div className="container">
+          <div className="mb-5 text-center" style={{ color: "#3b608d" }}>
+            <Typography gutterBottom variant="h4" fontWeight={600}>
+              PROJECTS HISTORY
+            </Typography>
+          </div>
+          <div className="mb-3">
+            {workHistory.map((c, i) => (
+              <div className="mb-5">
+                <div className="row">
+                  {i % 2 === 1 ? (
+                    <>
+                      <div className="col-lg-6 d-flex flex-wrap">
+                        {c.images.map((d, k) => (
+                          <div className="col-lg-6 mb-2">
+                            <img className="img-fluid" alt={k} src={d} />
+                          </div>
+                        ))}
+                      </div>
+                      <div className="col-lg-6 d-flex align-items-center">
+                        <div>
+                          <Typography
+                            color="#123b5a"
+                            variant="h5"
+                            fontWeight={700}
+                          >
+                            {c.title}
+                          </Typography>
+                          <Typography variant="body1" gutterBottom>
+                            {c.description}
+                          </Typography>
+                          <Link
+                            target="_blank"
+                            underline="hover"
+                            href={c.url.link}
+                          >
+                            {c.url.text}
+                          </Link>
+                        </div>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="col-lg-6 d-flex align-items-center">
+                        <div>
+                          <Typography
+                            color="#123b5a"
+                            variant="h5"
+                            fontWeight={700}
+                          >
+                            {c.title}
+                          </Typography>
+
+                          <Typography variant="body1" gutterBottom>
+                            {c.description}
+                          </Typography>
+                          <Link
+                            target="_blank"
+                            underline="hover"
+                            href={c.url.link}
+                          >
+                            {c.url.text}
+                          </Link>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 d-flex flex-wrap">
+                        {c.images.map((d, k) => (
+                          <div className="col-lg-6 mb-2">
+                            <img className="img-fluid" alt={k} src={d} />
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
