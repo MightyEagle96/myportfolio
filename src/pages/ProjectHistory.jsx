@@ -126,6 +126,8 @@ export default function ProjectHistory() {
           </div>
         </div>
       </div>
+
+      <div className="d-none d-md-block d-lg-none"></div>
     </div>
   );
 }

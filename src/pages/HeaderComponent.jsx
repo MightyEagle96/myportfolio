@@ -85,9 +85,9 @@ export default function HeaderComponent() {
       </div>
       <div className="d-sm-block d-md-none ">
         <div className="mobileBanner d-flex align-items-center text-white">
-          <div className="container">
+          <div className="container mt-4 mb-4">
             <div className="d-flex justify-content-center">
-              <Avatar src={logo} sx={{ height: 150, width: 150 }} />
+              <Avatar src={logo} sx={{ height: 120, width: 120 }} />
             </div>
             <div className="mt-3">
               <Typography variant="h4" fontWeight={700} gutterBottom>
