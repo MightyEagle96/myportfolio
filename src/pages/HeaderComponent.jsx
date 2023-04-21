@@ -1,6 +1,6 @@
 import { Avatar, Typography } from "@mui/material";
 import React from "react";
-import logo from "../image/logo.png";
+import logo from "../image/logo.jpg";
 import { myData } from "./data";
 
 export default function HeaderComponent() {
@@ -37,13 +37,13 @@ export default function HeaderComponent() {
           </div>
         </div>
       </div>
-      <div className="d-sm-block d-md-none">
-        <div className="mobileBanner text-white">
+      <div className="d-sm-block d-md-none ">
+        <div className="mobileBanner d-flex align-items-center text-white">
           <div className="container">
             <div className="d-flex justify-content-center">
-              <Avatar src={logo} sx={{ height: 300, width: 200 }} />
+              <Avatar src={logo} sx={{ height: 150, width: 150 }} />
             </div>
-            <div>
+            <div className="mt-3">
               <Typography variant="h4" fontWeight={700} gutterBottom>
                 {myData.name}
               </Typography>

@@ -35,7 +35,7 @@ export default function ProjectHistory() {
                   ))}
                 </div>
                 <div>
-                  <Link underline="hover" href={c.url.link}>
+                  <Link target="_blank" underline="hover" href={c.url.link}>
                     {c.url.text}
                   </Link>
                 </div>

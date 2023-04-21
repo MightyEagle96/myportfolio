@@ -15,7 +15,7 @@ body {
 }
 
 .mobileBanner {
-  min-height: 60vh;
+  min-height: 45vh;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(
