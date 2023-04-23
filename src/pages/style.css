@@ -25,3 +25,8 @@ body {
     ),
     url("../image/bg.jpg");
 }
+
+.footer {
+  background-color: #252131;
+  min-height: 15vh;
+}
