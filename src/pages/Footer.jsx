@@ -62,13 +62,17 @@ export default function Footer() {
             <div className="text-center">
               <Link
                 underline="none"
-                sx={{ color: "white", ":hover": { color: "whitesmoke" } }}
+                sx={{
+                  color: "white",
+                  ":hover": { color: "whitesmoke" },
+                  fontSize: 14,
+                }}
                 href="mailto: devmightyeagle@gmail.com"
               >
-                <Email /> SEND AN EMAIL
+                <Email /> send me a mail
               </Link>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center pb-5 pt-3">
               <div className="me-2">
                 <Link
                   underline="none"
