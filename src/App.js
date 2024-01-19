@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
-import HomePage from "./pages/HomePage";
+import MainRoutes from "./routes/MainRoutes";
 
 function App() {
-  return <HomePage />;
+  return <MainRoutes />;
 }
 
 export default App;

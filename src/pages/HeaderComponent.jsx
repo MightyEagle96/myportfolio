@@ -11,10 +11,10 @@ export default function HeaderComponent() {
         <div className="desktopBanner text-white  d-flex justify-content-center align-items-center">
           <div className="container mt-4 mb-4">
             <Stack direction="row">
-              <div className="col-lg-2">
+              <div className="col-lg-3">
                 <Avatar src={logo} sx={{ height: 200, width: 200 }} />
               </div>
-              <div className="col-lg-6 d-flex align-items-center">
+              <div className="col-lg-8 d-flex align-items-center">
                 <div>
                   <Typography
                     letterSpacing={2}
